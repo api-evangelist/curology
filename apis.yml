@@ -1,8 +1,15 @@
 aid: curology
 name: Curology
-description: 'Curology is a company surfaced as a portfolio company of forerunner-ventures, ivp and added
-  to the API Evangelist network as a stub for enrichment. Sector: health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Curology is a direct-to-consumer skincare and telehealth company founded
+  in 2014 and based in San Francisco, California. It pairs online dermatology providers
+  (dermatologists, nurse practitioners, and physician assistants) with custom-compounded
+  prescription topical treatments for acne, anti-aging, and other skin concerns, delivered
+  as a subscription. Care is delivered through a secure telemedicine platform where
+  patients complete a skin assessment, upload photos, and receive a personalized formula
+  plus ongoing provider messaging. Curology is a portfolio company of Forerunner Ventures
+  and IVP. It operates as a consumer web and mobile product and does not publish a
+  public developer API; this profile tracks the company as part of the API Evangelist
+  health/telehealth network.'
 url: https://raw.githubusercontent.com/api-evangelist/curology/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +18,29 @@ x-backed-by:
 - ivp
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.curology.com/static/core-og-image-55e7f0192272ae1ae8c10356a5d3b585.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Health
+- Skincare
+- Dermatology
+- Telehealth
+- Subscription
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/curology-domain-security.yml
 - type: Website
   url: https://www.curology.com
+- type: HelpCenter
+  url: https://support.curology.com
+- type: Blog
+  url: https://curology.com/blog/
+- type: PrivacyPolicy
+  url: https://curology.com/privacy/
+- type: TermsOfService
+  url: https://curology.com/terms/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
